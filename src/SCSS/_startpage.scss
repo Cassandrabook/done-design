@@ -1,0 +1,30 @@
+@use "mixins" as m;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    @include m.background-image;
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        height: 17vh;
+        background-color: rgba(255, 255, 255, 0.125);
+        text-align: center;
+
+        ul {
+            margin-bottom: 5px;
+
+            li {
+                list-style: none;
+                padding: 1px;
+                font-size: 22px;
+            }
+        }
+    }
+}
