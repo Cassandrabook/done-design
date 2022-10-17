@@ -5,3 +5,50 @@
     background-size: cover;
     background-position: center;
 }
+
+@mixin hamburger-menu {
+    .nav {
+        
+        &__toggle {
+            position: absolute; 
+            cursor: pointer;
+            margin: 0rem 1rem;
+            right: 0;
+            color: white;
+            font-size: 35px;
+            
+    
+            .fa-xmark{
+                display: none;
+            }
+    
+            .fa-bars {
+                margin-top: 7px;
+            }
+        }
+    
+        &__checkbox{
+            display: none;
+        }
+        
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+
+            padding-bottom: 5px;
+            
+            li {
+                list-style: none;
+                display: none;
+                font-size: 22px;
+            }
+            
+            a {
+               text-decoration: none;
+               color: white; 
+            }
+        }
+    }
+}
