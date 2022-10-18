@@ -5,22 +5,23 @@
     padding: 0;
 }
 
-.header {
+.first-page {
     @include m.background-image;
 }
+
 .nav {
-    @include m.hamburger-menu;
-    background-color: rgba(255, 255, 255, 0.186);
-    width: 100%;
-    height: 8vh;
+    @include m.nav-menu;
+    background-color: rgba(255, 255, 255, 0.268);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
 }
 
-#nav__checkbox:checked ~ ul.nav__menu li{
+#nav__checkbox:checked ~ ul.nav__menu li {
     display: block;
-}
-
-#nav__checkbox:checked ~ ul.nav__menu {
-    height: 17vh;
 }
 
 #nav__checkbox:checked ~ label.nav__toggle .fa-xmark {
@@ -29,4 +30,28 @@
 
 #nav__checkbox:checked ~ label.nav__toggle .fa-bars {
     display: none;
+}
+
+
+.text {
+    color: white; 
+
+    &__startpage{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        gap: 45px;
+        text-align: center;
+
+        h1{
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    }
+
 }

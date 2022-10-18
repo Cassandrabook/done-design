@@ -6,48 +6,48 @@
     background-position: center;
 }
 
-@mixin hamburger-menu {
+@mixin nav-menu {
     .nav {
-        
+
         &__toggle {
-            position: absolute; 
+            position: absolute;
             cursor: pointer;
-            margin: 0rem 1rem;
+            margin: 0;
             right: 0;
-            color: white;
-            font-size: 35px;
-            
-    
-            .fa-xmark{
+            font-size: 34px;
+            padding: 10px;
+            padding-top: 15px;
+
+            .fa-xmark {
                 display: none;
             }
     
             .fa-bars {
-                margin-top: 7px;
+                
             }
+    
         }
     
         &__checkbox{
             display: none;
         }
-        
-        &__menu{
+    
+        &__menu {
             display: flex;
             flex-direction: column;
-            justify-content: end;
             align-items: center;
-
-            padding-bottom: 5px;
-            
+            justify-content: end;
+    
             li {
                 list-style: none;
+                padding: 1px;
                 display: none;
-                font-size: 22px;
             }
-            
+    
             a {
-               text-decoration: none;
-               color: white; 
+                text-decoration: none;
+                color: white;
+                font-size: 22px;
             }
         }
     }
