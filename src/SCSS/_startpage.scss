@@ -38,6 +38,8 @@
     display: none;
 }
 
+
+
 .main {
     display: flex;
     flex-direction: column;
@@ -81,60 +83,65 @@
     }
 }
 
-.rakib {
-    @include m.team-design;
-
-    &__description{
-        height: 180px;
+.team {
+    
+    .rakib {
+        @include m.team-design;
+    
+        &__description{
+            height: 180px;
+        }
+    
+        &__picture{
+            @include m.team-picture-styling;
+            background-image: url(./../assets/Rakib_Square.png);
+        }
     }
-
-    &__picture{
-        @include m.team-picture-styling;
-        background-image: url(./../assets/Rakib_Square.png);
+    
+    .alexandra {
+        @include m.team-design;
+        margin-top: 50px;
+    
+        &__description{
+            height: 150px;
+        }
+    
+        &__picture{
+            @include m.team-picture-styling;
+            background-image: url(./../assets/Alexandra_Square.png);
+        }
+    }
+     
+    .lasse {
+        @include m.team-design;
+        margin-top: 50px;
+    
+        &__description{
+            height: 120px;
+        }
+    
+        &__picture{
+            @include m.team-picture-styling;
+            background-image: url(./../assets/NoPerson_Square.png);
+        }    
+    }
+    
+    .sebastian{
+        @include m.team-design;
+        margin-top: 50px;
+    
+        &__description{
+            height: 160px;
+        }
+    
+        &__picture{
+            @include m.team-picture-styling;
+            background-image: url(./../assets/Sebastian_Square.png);
+        }
     }
 }
 
-.alexandra {
-    @include m.team-design;
-    margin-top: 50px;
 
-    &__description{
-        height: 150px;
-    }
-
-    &__picture{
-        @include m.team-picture-styling;
-        background-image: url(./../assets/Alexandra_Square.png);
-    }
-}
- 
-.lasse {
-    @include m.team-design;
-    margin-top: 50px;
-
-    &__description{
-        height: 120px;
-    }
-
-    &__picture{
-        @include m.team-picture-styling;
-        background-image: url(./../assets/NoPerson_Square.png);
-    }    
-}
-
-.sebastian{
-    @include m.team-design;
-    margin-top: 50px;
-
-    &__description{
-        height: 160px;
-    }
-
-    &__picture{
-        @include m.team-picture-styling;
-        background-image: url(./../assets/Sebastian_Square.png);
-    }
-}
 
 .aside-arrow-down {
     display: flex;
@@ -145,5 +152,26 @@
     a {
         color: black;
         font-size: 27px;
+    }
+}
+
+.info {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+    padding-left: 25%;
+
+    p{
+        font-size: 27px;
+        padding: 8px;
+
+        i{
+            font-size: 32px; 
+            padding-right: 15px;  
+        }
     }
 }
