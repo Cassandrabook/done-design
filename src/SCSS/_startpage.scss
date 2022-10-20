@@ -89,10 +89,12 @@
 
     &__name{
         font-weight: bold;
+        font-size: 18px;
     }
 
     &__picture{
-        @include m.picture-rakib;
+        @include m.team-picture-styling;
+        background-image: url(./../assets/Rakib_Square.png);
     }
 
     &__description{
