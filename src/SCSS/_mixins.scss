@@ -16,13 +16,10 @@
         cursor: pointer;
         right: 0;
         font-size: 34px;
+        margin: 23px 10px; 
             
         .fa-xmark {
             display: none;
-        }
-    
-        .fa-bars {
-            
         }
     }
     
@@ -89,7 +86,7 @@
 }
 
 @mixin desktop { 
-    @media screen and (min-width: 1200px) { 
+    @media screen and (min-width: 768px) { 
         @content;
     } 
  } 

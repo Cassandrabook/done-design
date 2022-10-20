@@ -11,19 +11,17 @@
 
 .header {
     background-color: rgba(255, 255, 255, 0.268);
-    padding: 20px;
+    height: 10vh;
+    width: 100vw;
     color: white;
+
+    @include m.desktop{
+        height: 7vh;
+    }
 }
 
 .nav {
     @include m.nav-menu;
-    // background-color: rgba(255, 255, 255, 0.268);
-    // height: 20px;
-    // width: 100vw;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // color: white;
 
     &__toggle {
         @include m.desktop{
@@ -34,8 +32,9 @@
     &__menu {
         @include m.desktop{
             flex-direction: row;
+            align-items: center;
+            padding: 15px 25px;
             gap: 40px;
-            padding-right: 25px;
         }
 
         li {
@@ -61,9 +60,12 @@
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 25vh;
     color: white;
+    gap: 200px;
 
     @include m.desktop{
         margin-top: 35vh
@@ -83,19 +85,11 @@
             width: 100vw;
         }
     }
-
-    &__arrow-down {
-        margin-top: 120px;
-
-        @include m.desktop{
-            margin-top: 280px;
-        }
-        
+       
         a {
             color: white;
             font-size: 27px;
         }
-    }
 }
 
 .head-text {
