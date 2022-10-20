@@ -11,46 +11,41 @@
 }
 
 @mixin nav-menu {
-    .nav {
-
-        &__toggle {
-            position: absolute;
-            cursor: pointer;
-            right: 0;
-            font-size: 34px;
+    &__toggle {
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        font-size: 34px;
             
-
-            .fa-xmark {
-                display: none;
-            }
-    
-            .fa-bars {
-                
-            }
-    
-        }
-    
-        &__checkbox{
+        .fa-xmark {
             display: none;
         }
     
-        &__menu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: end;
+        .fa-bars {
+            
+        }
+    }
     
-            li {
-                list-style: none;
-                padding: 1px;
-                display: none;
-            }
+    &__checkbox{
+        display: none;
+    }
     
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 22px;
-            }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    
+        li {
+            list-style: none;
+            padding: 1px;
+            display: none;
+        }
+    
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
         }
     }
 }

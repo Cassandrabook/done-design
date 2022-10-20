@@ -24,6 +24,26 @@
     // justify-content: center;
     // align-items: center;
     // color: white;
+
+    &__toggle {
+        @include m.desktop{
+            display: none;
+        }
+    }
+
+    &__menu {
+        @include m.desktop{
+            flex-direction: row;
+            gap: 40px;
+            padding-right: 25px;
+        }
+
+        li {
+            @include m.desktop{
+                display: block;
+            }
+        }
+    }
 }
 
 #nav__checkbox:checked ~ ul.nav__menu li {
@@ -38,31 +58,34 @@
     display: none;
 }
 
-
-
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
     margin-top: 25vh;
     color: white;
 
     &__title {
-        font-size: 40px;
+        font-size: 33px;
         padding-bottom: 43px;
     }
 
     &__description{
         font-size: 22px;
         padding-bottom: 43px;
+        width: 260px;
+
+        @include m.desktop{
+            width: 100vw;
+        }
+        
     }
 
     &__arrow-down {
         display: flex;
-        justify-content: end;
+        margin-top: 120px;
         
         a {
             color: white;
@@ -99,6 +122,17 @@
     
         &__description{
             height: 180px;
+
+            @include m.desktop {
+                height: 120px;
+                width: 500px;
+            }
+
+            p {
+                @include m.desktop{
+                    padding: 45px;
+                }
+            }
         }
     
         &__picture{
@@ -110,12 +144,25 @@
     .alexandra {
         @include m.team-design;
         margin-top: 50px;
+
         @include m.desktop{
             width: 700px;
+            margin-top: 0;
         }
     
         &__description{
             height: 150px;
+
+            @include m.desktop {
+                height: 120px;
+                width: 500px;
+            }
+
+            p {
+                @include m.desktop{
+                    padding: 45px;
+                }
+            }
         }
     
         &__picture{
@@ -127,12 +174,24 @@
     .lasse {
         @include m.team-design;
         margin-top: 50px;
+
         @include m.desktop{
             width: 700px;
         }
     
         &__description{
             height: 120px;
+
+            @include m.desktop {
+                height: 100px;
+                width: 340px;
+            }
+
+            p {
+                @include m.desktop{
+                    padding: 45px;
+                }
+            }
         }
     
         &__picture{
@@ -144,12 +203,24 @@
     .sebastian{
         @include m.team-design;
         margin-top: 50px;
+
         @include m.desktop{
             width: 700px;
         }
     
         &__description{
             height: 160px;
+
+            @include m.desktop {
+                height: 120px;
+                width: 500px;
+            }
+
+            p {
+                @include m.desktop{
+                    padding: 45px;
+                }
+            }
         }
     
         &__picture{
