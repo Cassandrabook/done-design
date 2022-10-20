@@ -9,15 +9,21 @@
     @include m.background-image;
 }
 
-.nav {
-    @include m.nav-menu;
+.header {
     background-color: rgba(255, 255, 255, 0.268);
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     color: white;
+}
+
+.nav {
+    @include m.nav-menu;
+    // background-color: rgba(255, 255, 255, 0.268);
+    // height: 20px;
+    // width: 100vw;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // color: white;
 }
 
 #nav__checkbox:checked ~ ul.nav__menu li {
@@ -32,26 +38,75 @@
     display: none;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin-top: 25vh;
+    color: white;
 
-.text {
-    color: white; 
-
-    &__startpage{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        height: 80vh;
-        gap: 45px;
-        text-align: center;
-
-        h1{
-            font-size: 34px;
-        }
-
-        p {
-            font-size: 25px;
-        }
+    &__title {
+        font-size: 40px;
+        padding-bottom: 43px;
     }
 
+    &__description{
+        font-size: 22px;
+        padding-bottom: 43px;
+    }
+
+    &__arrow-down {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        height: 35vh;
+        font-size: 24px;
+        color: white;
+    }
+}
+
+.head-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 55px;
+
+    h2{
+        font-size: 33px;
+    }
+}
+
+.rakib {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    &__name{
+        font-weight: bold;
+    }
+
+    &__picture{
+        @include m.picture-rakib;
+    }
+
+    &__description{
+        width: 350px;
+        height: 100px;
+        background-color: rgb(202, 200, 200);
+        border-radius: 6px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fa-quote-right{
+            font-size: 40px;
+        }
+    }
 }

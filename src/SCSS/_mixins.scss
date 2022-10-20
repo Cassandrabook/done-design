@@ -1,9 +1,11 @@
 @mixin background-image {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(./../assets/negative-space-black-forest-dawn.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 @mixin nav-menu {
@@ -12,11 +14,9 @@
         &__toggle {
             position: absolute;
             cursor: pointer;
-            margin: 0;
             right: 0;
             font-size: 34px;
-            padding: 10px;
-            padding-top: 15px;
+            
 
             .fa-xmark {
                 display: none;
@@ -51,4 +51,14 @@
             }
         }
     }
+}
+
+@mixin picture-rakib {
+    width: 300px;
+    height: 300px;
+    background-image: url(./../assets/Rakib_Square.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    
 }
