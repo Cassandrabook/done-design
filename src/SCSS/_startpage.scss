@@ -60,12 +60,12 @@
 
     &__arrow-down {
         display: flex;
-        flex-direction: column;
         justify-content: end;
-        align-items: center;
-        height: 35vh;
-        font-size: 24px;
-        color: white;
+        
+        a {
+            color: white;
+            font-size: 27px;
+        }
     }
 }
 
@@ -82,33 +82,68 @@
 }
 
 .rakib {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    @include m.team-design;
 
-    &__name{
-        font-weight: bold;
-        font-size: 18px;
+    &__description{
+        height: 180px;
     }
 
     &__picture{
         @include m.team-picture-styling;
         background-image: url(./../assets/Rakib_Square.png);
     }
+}
+
+.alexandra {
+    @include m.team-design;
+    margin-top: 50px;
 
     &__description{
-        width: 350px;
-        height: 100px;
-        background-color: rgb(202, 200, 200);
-        border-radius: 6px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 150px;
+    }
 
-        .fa-quote-right{
-            font-size: 40px;
-        }
+    &__picture{
+        @include m.team-picture-styling;
+        background-image: url(./../assets/Alexandra_Square.png);
+    }
+}
+ 
+.lasse {
+    @include m.team-design;
+    margin-top: 50px;
+
+    &__description{
+        height: 120px;
+    }
+
+    &__picture{
+        @include m.team-picture-styling;
+        background-image: url(./../assets/NoPerson_Square.png);
+    }    
+}
+
+.sebastian{
+    @include m.team-design;
+    margin-top: 50px;
+
+    &__description{
+        height: 160px;
+    }
+
+    &__picture{
+        @include m.team-picture-styling;
+        background-image: url(./../assets/Sebastian_Square.png);
+    }
+}
+
+.aside-arrow-down {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 70px;
+
+    a {
+        color: black;
+        font-size: 27px;
     }
 }
