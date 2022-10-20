@@ -84,9 +84,18 @@
 }
 
 .team {
-    
+    @include m.desktop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     .rakib {
         @include m.team-design;
+
+        @include m.desktop{
+            width: 700px;
+        }
     
         &__description{
             height: 180px;
@@ -101,6 +110,9 @@
     .alexandra {
         @include m.team-design;
         margin-top: 50px;
+        @include m.desktop{
+            width: 700px;
+        }
     
         &__description{
             height: 150px;
@@ -115,6 +127,9 @@
     .lasse {
         @include m.team-design;
         margin-top: 50px;
+        @include m.desktop{
+            width: 700px;
+        }
     
         &__description{
             height: 120px;
@@ -129,6 +144,9 @@
     .sebastian{
         @include m.team-design;
         margin-top: 50px;
+        @include m.desktop{
+            width: 700px;
+        }
     
         &__description{
             height: 160px;
