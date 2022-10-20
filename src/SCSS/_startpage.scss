@@ -61,11 +61,13 @@
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin-top: 25vh;
     color: white;
+
+    @include m.desktop{
+        margin-top: 35vh
+    }
 
     &__title {
         font-size: 33px;
@@ -80,12 +82,14 @@
         @include m.desktop{
             width: 100vw;
         }
-        
     }
 
     &__arrow-down {
-        display: flex;
         margin-top: 120px;
+
+        @include m.desktop{
+            margin-top: 280px;
+        }
         
         a {
             color: white;
@@ -229,8 +233,6 @@
         }
     }
 }
-
-
 
 .aside-arrow-down {
     display: flex;
