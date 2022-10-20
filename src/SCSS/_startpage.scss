@@ -164,14 +164,28 @@
     gap: 50px;
     padding: 60px;
     padding-left: 25%;
+    
+    @include m.desktop {
+        flex-direction: row;
+        padding-left: 0;
+        justify-content: space-evenly;
+    }
 
     p{
         font-size: 27px;
         padding: 8px;
 
+        @include m.desktop {
+            font-size: 22px;
+        }
+
         i{
             font-size: 32px; 
             padding-right: 15px;  
+            
+            @include m.desktop {
+                font-size: 24px;
+            }
         }
     }
 }
