@@ -1,4 +1,5 @@
 @use "mixins" as m;
+@use "variables" as v;
 
 * {
     margin: 0;
@@ -7,13 +8,13 @@
 
 .first-page {
     @include m.background-image;
+    color: v.$main-font-color;
 }
 
 .header {
-    background-color: rgba(255, 255, 255, 0.268);
+    background-color: rgba(255, 255, 255, 0.142);
     height: 10vh;
     width: 100vw;
-    color: white;
 
     @include m.desktop{
         height: 7vh;
@@ -33,6 +34,7 @@
         @include m.desktop{
             flex-direction: row;
             align-items: center;
+            justify-content: end;
             padding: 15px 25px;
             gap: 40px;
         }
@@ -64,7 +66,6 @@
     align-items: center;
     text-align: center;
     margin-top: 25vh;
-    color: white;
     gap: 200px;
 
     @include m.desktop{
@@ -87,7 +88,7 @@
     }
        
         a {
-            color: white;
+            color: v.$main-font-color;
             font-size: 27px;
         }
 }
@@ -229,20 +230,12 @@
 }
 
 .aside-arrow-down {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    height: 70px;
-
-    a {
-        color: black;
-        font-size: 27px;
-    }
+    @include m.black-arrow;
 }
 
 .info {
     background-color: black;
-    color: white;
+    color: v.$main-font-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
