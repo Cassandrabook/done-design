@@ -116,7 +116,7 @@
         @include m.team-design;
 
         @include m.desktop{
-            width: 700px;
+            width: 550px;
         }
     
         &__description{
@@ -145,7 +145,7 @@
         margin-top: 50px;
 
         @include m.desktop{
-            width: 700px;
+            width: 550px;
             margin-top: 0;
         }
     
@@ -175,7 +175,7 @@
         margin-top: 50px;
 
         @include m.desktop{
-            width: 700px;
+            width: 550px;
         }
     
         &__description{
@@ -204,7 +204,7 @@
         margin-top: 50px;
 
         @include m.desktop{
-            width: 700px;
+            width: 550px;
         }
     
         &__description{
