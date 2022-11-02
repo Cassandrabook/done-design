@@ -14,7 +14,7 @@
 .header {
     background-color: rgba(255, 255, 255, 0.142);
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 
     @include m.desktop{
         height: 7vh;
